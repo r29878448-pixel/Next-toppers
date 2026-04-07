@@ -25,26 +25,26 @@ export default function BatchSelectionPopup({ isOpen, onClose, batchId, batchTit
           />
           
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            className="bg-white rounded-[2.5rem] shadow-[0_30px_70px_-20px_rgba(0,0,0,0.2)] max-w-[240px] w-full overflow-hidden relative border border-slate-100"
+            initial={{ scale: 0.98, opacity: 0, y: 8 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.98, opacity: 0, y: 8 }}
+            className="bg-slate-900/90 backdrop-blur-xl rounded-[2rem] shadow-2xl max-w-[260px] w-full overflow-hidden relative border border-white/10"
           >
-            <div className="p-8 flex flex-col items-center">
-              {/* Perfect WhatsApp Logo */}
-              <div className="relative mb-6">
-                <div className="absolute inset-0 bg-[#25D366]/20 rounded-full blur-2xl animate-pulse" />
-                <div className="relative w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_30px_-5px_rgba(37,211,102,0.4)]">
-                  <MessageCircle className="w-9 h-9 text-white fill-current" />
+            <div className="p-6 flex flex-col items-center">
+              {/* Compact WhatsApp Logo */}
+              <div className="relative mb-5">
+                <div className="absolute inset-0 bg-green-500/10 rounded-full blur-xl" />
+                <div className="relative w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg">
+                  <MessageCircle className="w-8 h-8 text-white fill-current" />
                 </div>
               </div>
 
-              <div className="w-full space-y-5 flex flex-col items-center">
+              <div className="w-full space-y-4 flex flex-col items-center">
                 {/* Join WhatsApp Button */}
                 <a 
-                  href="https://whatsapp.com/channel/your-channel-id" 
+                  href="https://whatsapp.com/channel/0029VbAvDSX0QeahEg4kkE3U" 
                   target="_blank"
-                  className="flex items-center justify-center w-full py-3.5 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.15em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl shadow-green-500/20 active:scale-95"
+                  className="flex items-center justify-center w-full py-3 bg-[#25D366] text-white font-bold text-sm rounded-2xl hover:bg-[#128C7E] transition-all shadow-lg shadow-green-500/20 active:scale-95"
                 >
                   Join WhatsApp Channel
                 </a>
@@ -53,7 +53,7 @@ export default function BatchSelectionPopup({ isOpen, onClose, batchId, batchTit
                 <Link 
                   href={`/batch/${batchId}`}
                   onClick={onClose}
-                  className="text-slate-400 font-black text-[9px] uppercase tracking-[0.2em] hover:text-indigo-600 transition-all"
+                  className="text-slate-400 font-bold text-[11px] uppercase tracking-widest hover:text-white transition-all"
                 >
                   Continue to Batch
                 </Link>
