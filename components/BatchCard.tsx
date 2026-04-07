@@ -56,28 +56,18 @@ export default function BatchCard({ batch, onClick }: BatchCardProps) {
         </div>
       </div>
       
-      <div className="p-8">
-        <div className="flex items-center space-x-2 mb-3">
-          <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse" />
-          <span className="text-[10px] font-black text-indigo-500 uppercase tracking-[0.2em]">Premium Batch</span>
-        </div>
-        <h3 className="text-xl font-black text-slate-900 mb-4 line-clamp-2 group-hover:text-indigo-600 transition-colors leading-tight">
+      <div className="p-6">
+        <h3 className="text-lg font-black text-slate-900 mb-3 line-clamp-2 group-hover:text-indigo-600 transition-colors leading-tight">
           {batch.title}
         </h3>
         <div className="flex items-center justify-between pt-4 border-t border-slate-50">
-          <div className="flex -space-x-2">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="w-7 h-7 rounded-full border-2 border-white bg-slate-100 overflow-hidden relative">
-                <Image src={`https://picsum.photos/seed/user${i}/100/100`} alt="User" fill className="object-cover" />
-              </div>
-            ))}
-            <div className="w-7 h-7 rounded-full border-2 border-white bg-indigo-50 flex items-center justify-center text-[8px] font-black text-indigo-600">
-              +1k
-            </div>
+          <div className="flex items-center text-indigo-600 font-black text-lg">
+            <IndianRupee className="w-4 h-4 mr-0.5" />
+            {batch.price}
           </div>
-          <button className="px-5 py-2.5 bg-slate-900 text-white text-[10px] font-black rounded-xl uppercase tracking-widest hover:bg-indigo-600 transition-colors shadow-lg shadow-slate-200">
-            Enrol Now
-          </button>
+          <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500">
+            <ArrowRight className="w-4 h-4" />
+          </div>
         </div>
       </div>
     </motion.div>

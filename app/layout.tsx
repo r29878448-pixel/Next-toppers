@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { inter, outfit } from '@/lib/fonts';
 import SecurityProvider from '@/components/SecurityProvider';
+import GlobalWhatsAppPopup from '@/components/GlobalWhatsAppPopup';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning className="bg-slate-50 text-slate-900 min-h-screen font-sans">
         <SecurityProvider>
           {children}
+          <GlobalWhatsAppPopup />
         </SecurityProvider>
       </body>
     </html>

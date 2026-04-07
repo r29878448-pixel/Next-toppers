@@ -89,68 +89,32 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl sm:text-7xl md:text-8xl font-black text-slate-900 tracking-tighter mb-8 leading-[0.9]"
+              className="text-6xl sm:text-8xl font-black text-slate-900 tracking-tighter mb-12 leading-[0.85]"
             >
-              Master Your <br />
-              <span className="relative inline-block">
-                Exams
-                <div className="absolute -bottom-2 left-0 w-full h-3 bg-indigo-500/10 -z-10 rounded-full" />
-              </span>
-              <span className="text-indigo-600">.</span>
+              Master <br />
+              <span className="text-indigo-600">Exams.</span>
             </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15 }}
-              className="text-lg sm:text-xl text-slate-500 font-medium mb-12 max-w-2xl mx-auto leading-relaxed"
-            >
-              Join 10,000+ students achieving excellence with our premium, 
-              expert-curated batches and real-time learning platform.
-            </motion.p>
             
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="max-w-xl mx-auto mb-16"
+              className="max-w-md mx-auto mb-20"
             >
-              <div className="relative group perspective-1000">
+              <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
-                  <Search className="h-5 w-5 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
+                  <Search className="h-4 w-4 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
                 </div>
                 <input
                   type="text"
-                  placeholder="What do you want to learn today?"
+                  placeholder="Search batches..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="block w-full pl-16 pr-16 py-6 bg-white border border-slate-200 rounded-[2rem] text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-8 focus:ring-indigo-500/5 focus:border-indigo-500 transition-all shadow-[0_20px_50px_-20px_rgba(0,0,0,0.1)] group-hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.15)]"
+                  className="block w-full pl-14 pr-14 py-5 bg-white border border-slate-100 rounded-3xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-8 focus:ring-indigo-500/5 focus:border-indigo-500 transition-all shadow-[0_15px_40px_-15px_rgba(0,0,0,0.08)]"
                 />
-                {searchQuery && (
-                  <button 
-                    onClick={() => setSearchQuery('')}
-                    className="absolute inset-y-0 right-0 pr-6 flex items-center text-slate-400 hover:text-slate-600"
-                  >
-                    <X className="h-5 w-5" />
-                  </button>
-                )}
               </div>
             </motion.div>
             
-            <div className="flex flex-wrap justify-center gap-10 text-slate-400">
-              {[
-                { icon: Users, label: '10k+ Students' },
-                { icon: BookOpen, label: '500+ Courses' },
-                { icon: Trophy, label: '98% Success' }
-              ].map((stat, i) => (
-                <div key={i} className="flex items-center space-x-3 group cursor-default">
-                  <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-colors">
-                    <stat.icon className="w-5 h-5" />
-                  </div>
-                  <span className="text-xs font-black uppercase tracking-widest text-slate-900">{stat.label}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -167,11 +131,6 @@ export default function Home() {
               {searchQuery ? 'Search Results' : 'Premium Batches'}
             </h2>
           </div>
-          <p className="text-slate-500 font-medium max-w-md md:text-right">
-            {searchQuery 
-              ? `Showing ${filteredBatches.length} results for your search query.` 
-              : 'Hand-picked educational content designed for maximum impact and conceptual clarity.'}
-          </p>
         </div>
 
         {loading ? (
