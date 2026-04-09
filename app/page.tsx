@@ -198,7 +198,7 @@ export default function Home() {
             <div className="flex space-x-6">
               <Link href="/privacy" className="text-xs text-slate-500 hover:text-indigo-600 font-bold uppercase tracking-widest">Privacy Policy</Link>
               <Link href="/disclaimer" className="text-xs text-slate-500 hover:text-indigo-600 font-bold uppercase tracking-widest">Disclaimer</Link>
-              <span className="text-xs text-slate-300 uppercase tracking-widest font-bold">Powered by Raj</span>
+              <span className="text-xs text-slate-300 uppercase tracking-widest font-bold">Powered by Rishav</span>
             </div>
           </div>
         </div>
