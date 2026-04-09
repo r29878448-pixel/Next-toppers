@@ -36,7 +36,7 @@ export default function SplashScreen() {
               Next<span className="text-indigo-400">Toppers</span>
             </h1>
             <p className="text-indigo-200/60 font-medium tracking-widest uppercase text-xs">
-              VIP Study
+              Study Portal 
             </p>
           </motion.div>
 
@@ -46,7 +46,7 @@ export default function SplashScreen() {
             transition={{ delay: 1.2 }}
             className="absolute bottom-12 text-slate-500 text-sm font-medium"
           >
-            Powered by <span className="text-slate-300">Raj</span>
+            Powered by <span className="text-slate-300">Rishav</span>
           </motion.div>
         </motion.div>
       )}
