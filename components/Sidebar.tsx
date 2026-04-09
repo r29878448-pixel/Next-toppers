@@ -88,7 +88,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
 
             <div className="p-6 border-t border-slate-100">
               <p className="text-[10px] text-slate-400 text-center uppercase tracking-widest font-bold">
-                Powered by Raj
+                Powered by Rishav 
               </p>
             </div>
           </motion.div>
