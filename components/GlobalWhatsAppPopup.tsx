@@ -78,7 +78,7 @@ export default function GlobalWhatsAppPopup() {
                   <div className="space-y-3">
                     {/* WhatsApp Button */}
                     <a 
-                      href="https://whatsapp.com/channel/0029VbAvDSX0QeahEg4kkE3U" 
+                      href="Follow the Study Portal channel on WhatsApp: https://whatsapp.com/channel/0029Vb7ZwWXHbFV0eqodie2x" 
                       target="_blank"
                       className="flex items-center justify-center w-full py-4 bg-[#25D366] text-white font-bold text-sm rounded-2xl hover:bg-[#128C7E] transition-all shadow-lg shadow-green-500/20 active:scale-95"
                     >
