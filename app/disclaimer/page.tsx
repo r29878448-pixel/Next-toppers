@@ -20,7 +20,7 @@ export default function DisclaimerPage() {
           
           <div className="prose prose-slate max-w-none">
             <p className="text-slate-600 leading-relaxed mb-6">
-              The information provided by NextToppers (VIP Study) is for general educational purposes only.
+              The information provided by NextToppers (Study Portal) is for general educational purposes only.
             </p>
             
             <h2 className="text-xl font-bold text-slate-900 mt-8 mb-4">Educational Content</h2>
