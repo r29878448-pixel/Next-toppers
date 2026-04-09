@@ -20,7 +20,7 @@ export default function PrivacyPage() {
           
           <div className="prose prose-slate max-w-none">
             <p className="text-slate-600 leading-relaxed mb-6">
-              At NextToppers (VIP Study), we take your privacy seriously. This policy explains how we collect, use, and protect your personal information.
+              At NextToppers (Study Portal), we take your privacy seriously. This policy explains how we collect, use, and protect your personal information.
             </p>
             
             <h2 className="text-xl font-bold text-slate-900 mt-8 mb-4">1. Information Collection</h2>
