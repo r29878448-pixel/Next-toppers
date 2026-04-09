@@ -88,7 +88,7 @@ export default function GlobalWhatsAppPopup() {
 
                     {/* Telegram Button */}
                     <a 
-                      href="https://t.me/Vip_Study_Officail" 
+                      href="https://t.me/+v8mL48KkXfUzNmY1" 
                       target="_blank"
                       className="flex items-center justify-center w-full py-4 bg-[#0088cc] text-white font-bold text-sm rounded-2xl hover:bg-[#0077b5] transition-all shadow-lg shadow-blue-500/20 active:scale-95"
                     >
