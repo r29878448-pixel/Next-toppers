@@ -78,7 +78,7 @@ export default function Home() {
               className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-widest mb-6"
             >
               <Sparkles className="w-3 h-3 mr-2" />
-              VIP Study Premium Learning
+              Study Portal Premium Learning
             </motion.div>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
@@ -183,7 +183,7 @@ export default function Home() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Disclaimer</h3>
             <p className="text-xs text-slate-500 leading-relaxed">
-              NextToppers (VIP Study) provides educational content for informational purposes only. 
+              NextToppers (Study Portal) provides educational content for informational purposes only. 
               While we strive for accuracy, we are not responsible for any errors or omissions. 
               Batch requests are subject to availability and faculty confirmation. 
               All content is protected by copyright laws.
@@ -193,7 +193,7 @@ export default function Home() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Quick Links</h3>
             <div className="flex space-x-6 mb-4">
               <a href="https://whatsapp.com/channel/0029VbAvDSX0QeahEg4kkE3U" target="_blank" className="text-xs text-slate-500 hover:text-[#25D366] font-bold uppercase tracking-widest transition-colors">WhatsApp</a>
-              <a href="https://t.me/Vip_Study_Officail" target="_blank" className="text-xs text-slate-500 hover:text-[#0088cc] font-bold uppercase tracking-widest transition-colors">Telegram</a>
+              <a href="https://t.me/+v8mL48KkXfUzNmY1" target="_blank" className="text-xs text-slate-500 hover:text-[#0088cc] font-bold uppercase tracking-widest transition-colors">Telegram</a>
             </div>
             <div className="flex space-x-6">
               <Link href="/privacy" className="text-xs text-slate-500 hover:text-indigo-600 font-bold uppercase tracking-widest">Privacy Policy</Link>
